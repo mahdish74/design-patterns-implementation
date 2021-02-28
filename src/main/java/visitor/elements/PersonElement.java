@@ -16,7 +16,6 @@ public class PersonElement implements Element {
         visitor.visit(this);
     }
 
-
     public String getName() {
         return name;
     }
