@@ -1,0 +1,14 @@
+package memento.client;
+
+import memento.Caretaker;
+import memento.Person;
+
+public class Main {
+    public static void main(String[] args) {
+        Caretaker caretaker = new Caretaker();
+        Person person = new Person("mahdi", "shojaei");
+        caretaker.push(person.save());
+        person.restore(caretaker.pop());
+
+    }
+}
