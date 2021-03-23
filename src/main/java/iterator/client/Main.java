@@ -1,4 +1,4 @@
-package iterator.container.client;
+package iterator.client;
 
 import iterator.container.MList;
 import iterator.iterator.Iterator;
