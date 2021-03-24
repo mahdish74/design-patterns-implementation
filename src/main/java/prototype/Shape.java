@@ -1,4 +1,4 @@
-package creational.prototype;
+package prototype;
 
 
 public class Shape {

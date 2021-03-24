@@ -1,4 +1,4 @@
-package creational.builder;
+package builder;
 
 
 public class Main {

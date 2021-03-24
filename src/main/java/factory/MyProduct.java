@@ -1,4 +1,4 @@
-package creational.factory;
+package factory;
 
 
 public class MyProduct implements Product {

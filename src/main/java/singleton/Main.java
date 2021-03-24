@@ -1,4 +1,4 @@
-package creational.singleton;
+package singleton;
 
 
 public class Main {
