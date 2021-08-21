@@ -29,6 +29,11 @@ public class Shape {
     }
 
     @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Request{");
         sb.append("id='").append(id).append('\'');

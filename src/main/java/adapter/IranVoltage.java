@@ -1,7 +1,5 @@
 package adapter;
 
-import bridge.engine.V6;
-
 public class IranVoltage implements Voltage {
     private final int value;
 

@@ -6,8 +6,7 @@ import facade.oldapi.Shape;
 import facade.oldapi.Square;
 
 public class ShapeMaker {
-   private Shape
-           circle;
+   private Shape circle;
    private Shape rectangle;
    private Shape square;
 

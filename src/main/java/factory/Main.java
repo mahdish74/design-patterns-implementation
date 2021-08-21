@@ -1,24 +1,32 @@
 package factory;
 
-import java.util.logging.Logger;
-
+import java.text.NumberFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Main {
-    private final static Logger logger = Logger.getLogger(Main.class.getName());
-
     public static void main(String[] args) {
-        Product product = ProductFactory.getProduct("My");
-        MyProduct myProduct = (MyProduct) product;
-        logger.info(myProduct.getName());
-        Product product2 = ProductFactory.getProduct("Another");
-        AnotherProduct anotherProduct = (AnotherProduct) product2;
-        logger.info(anotherProduct.getName());
-        try {
-            Product nonExistenceProduct = ProductFactory.getProduct("NonExistence");
-            logger.info(nonExistenceProduct.getName());
-        } catch (Exception ex) {
-            logger.info("non existence product type : " + ex.getMessage());
-        }
+        double n = 1240.35;
+        NumberFormat nf = NumberFormat.getInstance(new Locale("en", "US"));
+        String val = nf.format(n);
+
+        System.out.println(val);
+
+        nf=NumberFormat.getInstance(new Locale("fa", "IR"));
+        val = nf.format(n);
+
+        System.out.println(val);
+
+//=========================================================================================================================
+
+        Calendar calendar = Calendar.getInstance();
+
+        int max = calendar.getMaximum(Calendar.DAY_OF_WEEK);
+        System.out.println("Maximum number of days in a week: " + max);
+
+        max = calendar.getMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println("Maximum number of days in a month: " + max);
+
 
     }
 }
