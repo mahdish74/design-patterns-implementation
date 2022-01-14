@@ -3,18 +3,18 @@ package state.statemachine;
 import state.state.State;
 
 public class StateMachine {
-    private State currentState;
+    private State nextState;
 
 
     public StateMachine(State currentState) {
-        this.currentState = currentState;
+        this.nextState = currentState;
     }
 
     public void change() {
-        currentState.change(this);
+        nextState.change(this);
     }
 
-    public void setCurrentState(State currentState) {
-        this.currentState = currentState;
+    public void setNextState(State nextState) {
+        this.nextState = nextState;
     }
 }

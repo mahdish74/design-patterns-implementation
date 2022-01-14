@@ -9,7 +9,7 @@ public class Caretaker {
         history.push(personMemento);
     }
 
-    public PersonMemento pop(){//میتونیم از دیگر کالکشن های دیگه هم استفاده کنیم  مثلا مپ بزاریم اینجا تو وروید کی بگیریم
+    public PersonMemento pop(){//میتونیم از دیگر کالکشن های  هم استفاده کنیم  مثلا مپ بزاریم اینجا تو وروید کی بگیریم
         return history.pop();
     }
 }

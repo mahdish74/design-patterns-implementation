@@ -19,14 +19,13 @@ public class User implements Client {
 
     @Override
     public void SendMessage(String to, String message) {
-        server.broadcast(username,to, message);
+        server.broadcast(username, to, message);
     }
 
     @Override
     public void receiveMessage(String from, String message) {
-        System.out.println("___________________________");
-        System.out.println(" (^_^)  "+ from);
-        System.out.println("---------------------------");
+        System.out.println("\n\n in " + username+ " system ");
+        System.out.println(" (^_^)  from "  + from);
         System.out.println(message);
     }
 }

@@ -7,10 +7,17 @@ public class Main {
 
 
     public static void main(String[] args) {
-        MList mList=new MList();
-        for(Iterator iter = mList.getIterator(); iter.hasNext();){
-            String name = (String)iter.next();
-            System.out.println("Name : " + name);
+        MList<String> myList = new MList<>();
+        myList.add("mahdi");
+        myList.add("hassan");
+        myList.add("ali");
+        myList.add("abass");
+        Iterator container = myList.getIterator();
+        while (container.hasNext()) {
+            System.out.println(container.next());
         }
+        System.out.println("---------------------------------");
+
+        System.out.println( myList.get(0));
     }
 }

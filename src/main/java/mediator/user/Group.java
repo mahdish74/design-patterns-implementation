@@ -37,7 +37,6 @@ public class Group implements Client {
     @Override
     public void receiveMessage(String from,String message) {
         for (Client value : member.values()) {
-            System.out.print(from +" in group  ");
             SendMessage(value.getUsername(),message);
         }
     }

@@ -12,11 +12,12 @@ public class Main {
         User mahdi = new User(server,"mehdi");
         User parham = new User(server,"parham");
         User ali = new User(server,"ali");
-        Group gorg = new Group(server,"gorg");
-        gorg.register(mahdi);
-        gorg.register(parham);
+        Group cmsDeveloper = new Group(server,"cmsDeveloper");
+        cmsDeveloper.register(mahdi);
+        cmsDeveloper.register(parham);
+        cmsDeveloper.register(ali);
 
-        mahdi.SendMessage(gorg.getUsername(),"hello");
+        mahdi.SendMessage(cmsDeveloper.getUsername(),"hello");
 
 
 

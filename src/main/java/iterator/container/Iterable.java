@@ -2,6 +2,6 @@ package iterator.container;
 
 import iterator.iterator.Iterator;
 
-public interface Container {
+public interface Iterable {
     Iterator getIterator();
 }
